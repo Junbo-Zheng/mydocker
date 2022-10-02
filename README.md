@@ -1,5 +1,5 @@
 # mydocker
-Create a basic docker image based on ubuntu22.04.
+Create a basic docker image based on ubuntu 22.04.
 
 ## Create image
 ```
@@ -17,6 +17,12 @@ mydocker     latest    0c3ba3cd06a9   37 minutes ago   216MB
 ```
 docker run -i -t mydocker /bin/zsh
 ```
+
+## Run image (mount local volume)
+```
+docker run -it -v /User/junbozheng/project:/home/mi/work mydocker
+```
+`/User/junbozheng/project` is the path location to Host, and `/home/mi/work` is the path location already created in the **mydocker** container. Now you can access all the files in the native path in the container, and they are completely synchronized.
 
 ## List containers
 ```
