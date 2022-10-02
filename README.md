@@ -45,6 +45,11 @@ You can refer [here](https://jingyan.baidu.com/article/11c17a2c088605b547e39d71.
 docker rm containerID1 containerID2 containerID3 ...
 ```
 
+## Commit a new image from container
+```
+docker commit -a "youname" -m "commit message" from_comtainer_id new_image_id:tag
+```
+
 ## Get help
 If you want to know how to use a command, you can view it in the following way:
 ```
