@@ -67,3 +67,9 @@ Options:
   -f, --force      Force removal of the image
       --no-prune   Do not delete untagged parents
 ```
+
+## Search image
+You can also find some existing images from **Docker Hub**. For example, to get the current Ubuntu image for latest version, you can type:
+```
+docker search ubuntu
+```
