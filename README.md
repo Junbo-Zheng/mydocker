@@ -1,5 +1,5 @@
 # mydocker
-Create a basic docker image based on ubuntu 22.04.
+Create a basic docker image based on ubuntu:latest.
 
 ## Create image
 ```
